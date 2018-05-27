@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>798519E8-7ACD-4992-83EE-78C9CC5D7981</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Laterer</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>F740BB1616FA55F8A669B2CB3818D63F9EC8D964</key>
+		<string>https://github.com/nimblechapps/Laterer.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Laterer/Laterer.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>F740BB1616FA55F8A669B2CB3818D63F9EC8D964</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/nimblechapps/Laterer.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>F740BB1616FA55F8A669B2CB3818D63F9EC8D964</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>F740BB1616FA55F8A669B2CB3818D63F9EC8D964</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Laterer</string>
+		</dict>
+	</array>
+</dict>
+</plist>

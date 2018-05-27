@@ -1,0 +1,11 @@
+{
+    "aps" : {
+        "alert" : "Chetan Sent you laterer.",
+        "badge" : 9,
+        "sound" : "bingbong.aiff"
+    },
+    "data" :{
+        "fLat" : "%20"
+        "fLong": "%20"
+    }
+}

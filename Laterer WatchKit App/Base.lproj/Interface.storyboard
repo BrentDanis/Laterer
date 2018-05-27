@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="7531" systemVersion="14C109" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="3737"/>
+    </dependencies>
+    <scenes>
+        <!--Friends-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller title="Friends" backgroundImage="WatchBackGround" contentMode="scaleAspectFill" id="AgC-eL-Hgc" customClass="InterfaceController">
+                    <items>
+                        <table alignment="left" id="awD-df-PJU">
+                            <items>
+                                <tableRow identifier="WKContactList" id="qgU-L6-o98" customClass="WKContactList">
+                                    <group key="rootItem" width="1" height="40" alignment="left" id="idR-X1-ek3">
+                                        <items>
+                                            <group width="30" height="30" alignment="left" verticalAlignment="center" radius="15" id="fq2-gJ-kwr">
+                                                <items>
+                                                    <imageView width="30" height="30" alignment="center" verticalAlignment="center" contentMode="scaleAspectFill" id="xRA-X1-pmm"/>
+                                                </items>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                            </group>
+                                            <label height="40" alignment="left" text="Label" textAlignment="left" numberOfLines="2" id="Nke-Rm-5VD">
+                                                <fontDescription key="font" type="system" pointSize="10"/>
+                                            </label>
+                                        </items>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    </group>
+                                    <connections>
+                                        <outlet property="img_ContactImage" destination="xRA-X1-pmm" id="FzQ-v1-gb9"/>
+                                        <outlet property="lbl_ContactName" destination="Nke-Rm-5VD" id="eMT-mK-Tyq"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        </table>
+                    </items>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="tableContactList" destination="awD-df-PJU" id="TTo-wp-Miw"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="281" y="453"/>
+        </scene>
+        <!--Notification-->
+        <scene sceneID="C4o-mw-gD0">
+            <objects>
+                <controller identifier="SendNotificationIC" title="Notification" backgroundImage="WatchBackGround" id="yS0-Q7-TTg" customClass="SendNotificationInterfaceController">
+                    <items>
+                        <group width="40" height="40" alignment="center" radius="20" id="6re-Tg-T8z">
+                            <items>
+                                <imageView width="40" height="40" alignment="center" verticalAlignment="center" contentMode="scaleAspectFill" id="GAY-29-uBC"/>
+                            </items>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        </group>
+                        <label width="134" alignment="left" text="Label" textAlignment="center" numberOfLines="2" id="vAj-hP-PFX"/>
+                        <button width="1" height="22" alignment="left" title="Laterer" id="h9r-dA-FkB">
+                            <fontDescription key="font" type="system" pointSize="12"/>
+                            <connections>
+                                <action selector="SendPush" destination="yS0-Q7-TTg" id="doq-tG-Qdk"/>
+                            </connections>
+                        </button>
+                        <button width="1" height="22" alignment="left" title="Laterer + Location" id="wMH-ef-bsc">
+                            <fontDescription key="font" type="system" pointSize="12"/>
+                            <connections>
+                                <action selector="sendPushWithLocation" destination="yS0-Q7-TTg" id="utJ-1f-efB"/>
+                            </connections>
+                        </button>
+                        <button width="1" height="22" alignment="left" title="Remind" id="TIb-Ii-OXc">
+                            <fontDescription key="font" type="system" pointSize="12"/>
+                            <connections>
+                                <action selector="scheduleLocalNotification" destination="yS0-Q7-TTg" id="CWZ-rn-hiY"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <connections>
+                        <outlet property="img_Profile" destination="GAY-29-uBC" id="Rnm-av-8ga"/>
+                        <outlet property="lbl_contactName" destination="vAj-hP-PFX" id="SRG-TN-gvH"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="507" y="453"/>
+        </scene>
+        <!--Static Notification Interface Controller-->
+        <scene sceneID="AEw-b0-oYE">
+            <objects>
+                <notificationController id="YCC-NB-fut">
+                    <items>
+                        <label alignment="left" text="Static" id="dgO-D8-A4e"/>
+                    </items>
+                    <notificationCategory key="notificationCategory" identifier="latererNotification" id="JfB-70-Muf">
+                        <color key="sashColor" red="0.23921568630000001" green="0.54117647059999996" blue="0.59607843140000005" alpha="1" colorSpace="calibratedRGB"/>
+                    </notificationCategory>
+                    <connections>
+                        <outlet property="notificationAlertLabel" destination="dgO-D8-A4e" id="Jta-ij-Yox"/>
+                        <segue destination="4sK-HA-Art" kind="relationship" relationship="dynamicNotificationInterface" id="kXh-Jw-8B1"/>
+                    </connections>
+                </notificationController>
+            </objects>
+            <point key="canvasLocation" x="281" y="711"/>
+        </scene>
+        <!--Static Notification Interface Controller-->
+        <scene sceneID="xgK-sg-sxn">
+            <objects>
+                <notificationController id="OA6-Dv-XBT">
+                    <items>
+                        <label alignment="left" text="Alert Label" id="Ibe-VU-AKM"/>
+                    </items>
+                    <notificationCategory key="notificationCategory" identifier="latererLocalNotification" id="NUQ-sl-0PT"/>
+                    <connections>
+                        <outlet property="notificationAlertLabel" destination="Ibe-VU-AKM" id="cTh-PO-E1b"/>
+                        <segue destination="Jo9-A5-9za" kind="relationship" relationship="dynamicNotificationInterface" id="Don-DI-nXi"/>
+                    </connections>
+                </notificationController>
+            </objects>
+            <point key="canvasLocation" x="281" y="951"/>
+        </scene>
+        <!--Notification Controller-->
+        <scene sceneID="ZPc-GJ-vnh">
+            <objects>
+                <controller id="4sK-HA-Art" customClass="NotificationController">
+                    <items>
+                        <label width="134" height="47" alignment="left" text="Rajiv Patil Sent you a Laterer." numberOfLines="3" id="IdU-wH-bcW">
+                            <fontDescription key="font" type="system" pointSize="12"/>
+                        </label>
+                    </items>
+                    <color key="backgroundColor" red="0.23921568630000001" green="0.54117647059999996" blue="0.59607843140000005" alpha="1" colorSpace="calibratedRGB"/>
+                    <connections>
+                        <outlet property="alertLabel" destination="IdU-wH-bcW" id="20h-1j-02x"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="507" y="711"/>
+        </scene>
+        <!--Location-->
+        <scene sceneID="egW-ZT-oTc">
+            <objects>
+                <controller identifier="LocationInterfaceController" title="Location" id="Ugv-jc-yBo" customClass="WKLocationInterfaceController">
+                    <items>
+                        <map width="1" height="1" alignment="left" id="01A-ke-e0r"/>
+                    </items>
+                    <connections>
+                        <outlet property="wkMapView" destination="01A-ke-e0r" id="qdF-Rk-9Ju"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="698" y="711"/>
+        </scene>
+        <!--Dynamic Notification Interface Controller-->
+        <scene sceneID="ipl-1a-GEa">
+            <objects>
+                <controller id="Jo9-A5-9za">
+                    <items>
+                        <label width="134" height="33" alignment="left" text="Local Notification" numberOfLines="3" id="ep5-lo-fsw"/>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="507" y="951"/>
+        </scene>
+    </scenes>
+</document>

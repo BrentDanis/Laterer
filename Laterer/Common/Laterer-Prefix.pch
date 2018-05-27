@@ -1,0 +1,26 @@
+//
+//  Laterer-Prefix.pch
+//  Laterer
+//
+//  Created by Nimble Chapps on 03/03/15.
+//  Copyright (c) 2015 NimbleChapps. All rights reserved.
+//
+
+#ifndef Laterer_Laterer_Prefix_pch
+#define Laterer_Laterer_Prefix_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+//#ifdef __OBJC__
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+//#endif
+
+#import "Constant.h"
+#import "PAWSCalls.h"
+#import "MBProgressHUD.h"
+#import "Macro.h"
+#import "Model.h"
+
+#endif
